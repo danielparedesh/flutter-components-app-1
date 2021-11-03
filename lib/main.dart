@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:app/screens/component_detail_screen.dart';
 import 'package:app/screens/components_list_screen.dart';
 
 void main() {
@@ -17,8 +16,6 @@ class MyApp extends StatelessWidget {
       home: const ComponentListScreen(),
       routes: {
         ComponentListScreen.routeName: (context) => const ComponentListScreen(),
-        ComponentDetailScreen.routeName: (context) =>
-            const ComponentDetailScreen()
       },
     );
   }

@@ -6,8 +6,6 @@ import 'package:app/models/menu_opts.dart';
 import 'dart:convert';
 import 'package:app/utils/icono_string_util.dart';
 
-import 'package:app/screens/component_detail_screen.dart';
-
 class ComponentListScreen extends StatefulWidget {
   const ComponentListScreen({Key? key}) : super(key: key);
 
@@ -53,11 +51,7 @@ class _ComponentListScreenState extends State<ComponentListScreen> {
                         Icons.chevron_right,
                         color: Colors.blue,
                       ),
-                      onTap: () {
-                        Navigator.of(context).pushNamed(
-                            ComponentDetailScreen.routeName,
-                            arguments: jsonEncode(rutas[index]));
-                      },
+                      onTap: () {},
                     );
                   });
             } else {
